@@ -1,0 +1,390 @@
+
+/* Responsiveness  */
+@media(max-width:1260px){
+    .about-container .aboutus{
+        margin-right: 3%;
+    }
+}
+
+@media(max-width:990px){
+    .about-img img{
+        height: 70vh;
+        width: 54vw;
+    }
+    .about-container .aboutus{
+        margin-right: 2%;
+    }
+    .fees-container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    .pricing.row3{
+        margin-top: 10%;
+    }
+}
+
+@media(max-width:940px){
+    .navbar .check-label{
+        display: block;
+        margin-left: 35px;
+    }
+    .navbar ul{
+        position: fixed;
+        width: 25%;
+        height: 95vh;
+        background-color: var(--secondary-color);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px; 
+        background: none;
+    }
+    .navbar ul li a{
+        color: #fff;
+        background: none;
+        position: relative;        
+    }
+    .navbar ul a::after{
+        content: '';
+        background-color: #dd0707;
+        position: absolute;
+        top: 33px;
+        left: 22px;
+        height: 2px;
+        width: 0%;
+        transition: 0.5s;
+        border: none;
+    }
+    .navbar ul li a:hover{
+        border:none;
+        color: #dd0707;
+    }
+    .navbar ul li a:hover::after{
+        width: 70%;
+        border: none; 
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .about-img img{
+        height: 65vh;
+        width: 54vw;
+    }
+    .about-container .aboutus h1{
+        font-size: 43px;
+    }
+    .about-container .aboutus p{
+        font-size: 14px;
+    }
+    .about-container .aboutus .fclassbtn{
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+
+@media(max-width:890px){
+    .home-info{
+        width: 62%;
+    }
+}
+
+@media(max-width:800px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-img img{
+        height: 60vh;
+        width: 75vw;
+    }
+    .about-container .aboutus{
+        margin: 3% 14% 0 15%;
+    }
+    .about-container .aboutus .fclassbtn{
+        font-size: 13px;
+        padding: 10px 30px;
+    }
+    .about-container .aboutus p.abpara1,
+    .about-container .aboutus p.abpara2,
+    .about-container .aboutus p.abpara3,
+    .about-container .aboutus p.abpara4{
+        margin-top: 8px;
+    }
+    .about-container .aboutus .uhead1::after{
+        content: ' Us?';
+        color: var(--redish-color);
+    }
+    .about-container .aboutus .uhead2{
+        visibility: hidden;
+        position: absolute;
+    }
+    .contact{
+        height: 130vh;
+        margin-top: 15%;
+    }
+    .contact-section .contact-info{
+        flex-direction: column;
+    }
+    .contact-section .contact-info .submitform{
+        width: 350px;
+    }   
+    .contact-section .contact-info .submitform form input{
+        padding: 8px 40px;
+        margin-top: 18px;
+    }
+    .contact-section .contact-info .submitform form .subbtn{
+        padding: 8px 36px;
+    }
+    .contact-section .contact-info .gym-info{
+        margin: 10% 0;
+    }
+}
+
+@media(max-width:720px){
+    .home-info h1{
+        font-size: 30px;
+    }
+    .home-info h3{
+        font-size: 24px;
+    }
+    .home-info .para{
+        font-size: 14px;
+    }
+    .fees-container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        margin-top: 10%;
+    }
+    .pricing.row2{
+        margin-top: 10%;
+    }
+    .home-info{
+        margin-top: 28%;
+    }
+    .home-info a.joinbtn2{
+        padding: 7px 25px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:650px){
+    .home-info{
+        width: 62%;
+    }
+    .about-container .aboutus .fclassbtn{
+        font-size: 12px;
+        padding: 9px 25px;
+    }
+    .navbar ul{
+        width: 34%;
+    }
+}
+
+@media(max-width:490px){
+    .navbar{
+        margin-top: -10px;
+    }
+    .navbar .logo img {
+        width: 17vw;
+        height: 17vh;
+    }
+    .navbar .check-label {
+        font-size: 27px;
+    }
+    .navbar ul{
+        width: 40%;
+        height: 86vh;
+    }
+    .navbar a.joinbtn1 button {
+        padding: 6px 27px;
+        font-size: 13px;
+    }
+    .home{
+        background-size: 100vw 80vh;
+        background-repeat: no-repeat;
+    }
+    .home-info h1{
+        font-size: 22px;
+    }
+    .home-info h3{
+        font-size: 18px;
+    }
+    .home-info .para{
+        font-size: 10px;
+    }
+    .home-info{
+        margin-top: 37%;
+    }
+    .home-info a.joinbtn2{
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+    .fees{
+        margin-top: -23%;
+    }
+    .fees-container{
+        margin-top: 15%;
+    }
+    .plan h1{
+        font-size: 38px;
+    }
+    .fees-container .pricing{
+        height: 350px;
+        width: 270px;
+    }
+    .fees-container .pricing p{
+        line-height: 25px;
+    }
+    .about-img img{
+        height: 52vh;
+        width: 78vw;
+    }
+    .about-container .aboutus{
+        margin-right: 10%;
+    }
+    .about-container .aboutus .uhead1::after{
+        visibility: hidden;
+        position: absolute;
+    }
+    .about-container .aboutus .uhead2{
+        visibility: visible;
+        position: static;
+    }
+    .contact-section .contact-info .submitform{
+        width: 300px;
+    }   
+    .contact-section .contact-info .submitform form input{
+        padding: 8px 28px;
+        margin-top: 15px;
+    }
+    .contact-section .contact-info .submitform form .subbtn{
+        padding: 8px 32px;
+    }
+    .contact-section .contact-info .gym-info{
+        margin-left: -5%;
+        font-size: 14px;
+    }
+    .contact-section .contact-info .gym-info h4 i{
+        padding: 9px;
+        margin-right: 17px;
+    }
+}
+
+@media(max-width:405px){
+    .navbar .logo img {
+        width: 19vw;
+        height: 13vh;
+    }
+    .navbar ul{
+        width: 45%;
+    }
+    .navbar .check-label {
+        font-size: 25px;
+    }
+    .navbar a.joinbtn1 button {
+        padding: 5px 25px;
+        font-size: 12px;
+    }
+    .about-container .aboutus {
+        margin: 5% 7% 0; 
+    }
+    .social-icons .button{
+        height: 45px;
+        width: 45px;
+    }
+    .social-icons .button:hover{
+        width: 160px;
+    }
+    .social-icons .button .icon{
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+    }
+    .social-icons .button .icon i{
+        font-size: 26px;
+        line-height: 45px;
+    }
+    .social-icons .button span{
+        font-size: 16px;
+        line-height: 45px;
+     }
+}
+
+@media(max-width:350px){
+    .navbar{
+        width: 50%;
+    }
+    .navbar .logo img {
+        width: 100px;
+        height: 70px;
+    }
+    .navbar .check-label {
+        font-size: 20px;
+    }
+    .navbar ul{
+        width: 50%;
+    }
+    .navbar a.joinbtn1 button {
+        padding: 4px 20px;
+        font-size: 11px;
+    }
+    .home-info h1{
+        font-size: 20px;
+    }
+    .home-info h3{
+        font-size: 16px;
+    }
+    .home-info .para{
+        font-size: 9px;
+    }
+    .home-info{
+        margin-top: 37%;
+    }
+    .home-info a.joinbtn2{
+        padding: 5px 18px;
+        font-size: 10px;
+    }
+    .fees{
+        margin-top: -30%;
+    }
+    .abhead h1 {
+        font-size: 38px;
+    }
+    .fees-container .pricing{
+        height: 330px;
+        width: 230px;
+    }
+    .fees-container .pricing p{
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .fees-container .pricing .head2{
+        font-size: 24px;
+    }
+    .fees-container .pricing .buybtn{
+        font-size: 13px;
+        padding: 8px 30px;
+    }
+    .contact-section .conhead h1{
+        font-size: 38px;
+    }
+    .contact-section .contact-info .submitform{
+        width: 270px;
+    }   
+    .contact-section .contact-info .submitform form .subbtn{
+        padding: 6px 28px;
+        font-size: 14px;
+    }
+    .contact-section .contact-info .gym-info{
+        margin-left: 3%;
+        font-size: 13px;
+    }
+    .contact-section .contact-info .gym-info h4 i{
+        padding: 7px;
+        margin-right: 22px;
+    }
+}
